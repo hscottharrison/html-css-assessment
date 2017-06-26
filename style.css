@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  color: #fff;
+}
+body{
+  height: 100vh;
+  background: url('./img/main-bg.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+.mobile{
+  display: none;
+}
+main{
+  height: calc(100vh - 220px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main h1{
+  font-size: 80px;
+}
+main h3{
+  font-size: 40px;
+}
+footer{
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+footer img{
+  height: 100px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+@media (max-width: 700px){
+    .normal{
+      display: none;
+    }
+    .mobile{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      padding: 20px;
+    }
+    .social-wrapper{
+      display: flex;
+      justify-content: space-between;
+      min-width: 20%;
+    }
+    img.hamburger{
+      background-color: #fff;
+      height: 50px;
+      border: 2px solid #fff;
+      border-radius: 100%;
+    }
+    img.social{
+      height: 30px;
+      background: transparent;
+      border: none;
+    }
+    #facebook{
+      background: transparent;
+    }
+
+}
